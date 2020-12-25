@@ -27,6 +27,10 @@ export class LoginFormComponent implements OnInit {
     })
   }
 
+   get helperFormControl(){
+    return this.registerForm.controls;
+  }
+
   onResetForm(){
     this.submitted = false;
     this.registerForm.reset();
